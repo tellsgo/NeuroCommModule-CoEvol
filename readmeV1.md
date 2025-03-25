@@ -1,5 +1,4 @@
-@ -1,2 +1,216 @@
-# NeuroCommModule-CoEvol
+# NeuroCommModuleSculptor
 
 [![许可证](https://img.shields.io/badge/许可证-MIT-blue.svg)](LICENSE)
 [![Python版本](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/downloads/)
@@ -59,10 +58,10 @@ NeuroCommModule-CoEvol（神经通信模块协同进化）是一个探索大型�
 
 ```bash
 # 克隆仓库
-git clone https://github.com/yourusername/NeuroCommModule-CoEvol.git
+git clone https://github.com/yourusername/NeuroCommModuleSculptor.git
 
 # 进入项目目录
-cd NeuroCommModule-CoEvol
+cd NeuroCommModuleSculptor
 
 # 创建虚拟环境
 python -m venv venv
@@ -99,8 +98,8 @@ runner.visualize_evolution(results)
 ## 项目结构
 
 ```
-NeuroCommModule-CoEvol/
-├── src/                      # 源代码
+NeuroCommModuleSculptor/
+├── src/                        # 源代码
 │   ├── models/               # 模型定义
 │   │   ├── model_wrapper.py  # 模型抽象基类
 │   │   ├── tinyllama_wrapper.py # TinyLlama模型适配器

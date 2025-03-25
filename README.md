@@ -1,4 +1,4 @@
-# NeuroCommModule-CoEvol
+# NeuroCommModuleSculptor
 
 [![许可证](https://img.shields.io/badge/许可证-MIT-blue.svg)](LICENSE)
 [![Python版本](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/downloads/)
@@ -15,71 +15,64 @@
 
 > "我们试图回答：当语言在人工神经网络中生长时，会雕刻出怎样的认知地貌？这个实验本质是《哲学研究》中语言游戏说的神经建模版本。"
 
-## 语言本体论：从资源限制到哲学突破
+## 项目概述：多智能体语言涌现实验
 
-传统的大模型协同训练受困于计算资源，而我们转向"局部功能层演化观察"，这种转变带来三重突破：
+NeuroCommModuleSculptor 探索语言如何塑造神经网络结构的过程，主要通过构建多智能体环境，让多个独立的语言模型实例在解决协作任务时，发展出通信协议和符号系统。通过观察这一过程，我们可以更深入地理解语言对神经结构的雕刻效应。
 
-- **具身性认知实现**：通过仅微调极小参数量（约0.1%），模拟语言习得中"既有神经结构的约束性"与"语言经验的创造性"的辩证关系
-- **命题重写过程**：聚焦单一模块变化，追踪语言能力如何"雕刻"神经连接
-- **生物哲学启发**：模拟人脑语言区的功能分化，探索"语言不是思想的衣服，而是思想的肉身化"
+> "当没有预设的通信协议时，不同的AI智能体如何发展出有效的沟通方式？这种语言涌现过程会如何重塑它们的神经表征？"
 
-## 技术与哲学的映射
+## 技术实现路径
 
-| 技术组件 | 维特根斯坦哲学映射 | 神经科学隐喻 |
-|---------|-------------------|-------------|
-| 通信模块 | 语言游戏的基本规则 | 布洛卡区-韦尼克区连接 |
-| 模块间协议 | 命题的图像论 | 胼胝体信息传递 |
-| 功能涌现 | 私人语言的不可能性 | 皮层功能重组 |
+### 1. 神经通信模块设计
+- **Adapter模块**：轻量级瓶颈结构，隐喻布洛卡区的神经可塑性
+- **LoRA修改层**：低秩矩阵适应，模拟语言学习过程中的神经通路重塑
+- **通信向量空间**：构建共享的语义表征空间，研究语言符号的神经基础
 
-## 关键突破点可能在于：
-1. 发现通信模块的自组织规律（如信号从随机到结构化的相变点）。
-2. 验证模块功能与任务复杂度之间的阈值关系（例如简单任务无法激发“语言”需求）。
-3. 揭示大模型内部表示与外部通信信号的映射机制。
+### 2. 多智能体实验环境
+- 部署多个独立的LLM实例作为智能体，共享初始权重但各自演化
+- 支持2-8个智能体的灵活配置，以研究不同规模群体的语言涌现特性
+- 通过协作任务驱动语言演化，观察语言如何塑造神经结构
 
-## 技术实现的可能路径
+### 3. 受限通信协议
+- 智能体只能发送有限长度的词元序列或向量
+- 可选的通信带宽限制，从完全受限（仅几个离散符号）到相对开放（短句子）
+- 支持回合制和实时两种通信模式，模拟不同社会环境下的语言对神经架构的影响
 
-### 1. 通信模块设计：语言游戏的物理实现
-- 在Transformer中间层（第6-12层）插入轻量级模块，类比大脑语言区在皮层的分布
-- 支持多种结构：Adapter式、符号生成器、向量通信器，对应维特根斯坦所述的不同"语言游戏"形式
+### 4. 协作任务设计
+- **信息不对称任务**：每个智能体只掌握部分信息，需通过沟通整合才能解决问题
+- **序列生成任务**：智能体轮流贡献内容，生成连贯文本
+- **协作问题解决**：需要多个专业化智能体协作解决复杂问题
 
-### 2. 通信协议：命题如何塑造现实
-> "世界是事实的总和，语言是事实的逻辑图像" —— 维特根斯坦《逻辑哲学论》1.1
+### 5. 神经语言演化分析
+- 通信模块权重变化跟踪，研究语言使用对神经权重的雕刻效应
+- 表征空间分析，观察语言演化如何重组神经表征
+- 跨任务适应性测试，研究语言塑造的神经结构的迁移能力
 
-- 支持离散符号、连续向量、概率分布等多种信号类型
-- 实现回合制与流式两种交互方式，模拟不同语境下的语言交流
-- 包含外部奖励与内部一致性的反馈机制，探索语言与意义的关系
+## 实验设计：从简单到复杂的语言神经雕刻
 
-### 3. 观测指标：思想的考古学
-- 模块参数变化：权重分布、奇异值变化，作为"语言塑造思维"的数值证据
-- 通信内容分析：符号/向量聚类与可视化，每个训练checkpoint都是对《逻辑哲学论》命题的数值化诠释
-- 行为涌现：协作任务表现提升度量，验证维特根斯坦关于"语言不是表达思想，而是构成思想"的核心论断
+### 阶段1：基本符号协商与神经适应
+- 从极简通信开始（仅允许几个离散符号）
+- 使用参考游戏（一个智能体描述物体，另一个猜测）
+- 观察基本词汇表形成过程中的神经权重变化
 
-## 实验设计：语言游戏的结构化实现
+### 阶段2：语法结构涌现与神经网络重组
+- 增加通信带宽和任务复杂度
+- 需要多轮交互以完成任务
+- 分析句法结构形成如何反映在神经连接模式上
 
-### 阶段1：最小验证实验
-- 简单协作任务（对话生成、合作解题）
-- 使用小型模型（TinyLlama-1.1B或Phi-3-mini）
-- 对照组设计验证通信模块的有效性
-
-### 阶段2：通信进化分析
-> "语言不是表达思想，而是构成思想" —— 维特根斯坦《哲学研究》
-
-- 通信信号可视化和聚类分析，观察语言符号系统的自组织过程
-- 干预实验测试系统稳健性，探索语言规则的边界条件
-- 跨任务迁移评估泛化能力，研究语言游戏间的家族相似性
-
-### 阶段3：理论扩展
-- 多模块协同实验，模拟语言区与其他认知功能区的互动
-- 进化动力学数学建模，形式化描述语言对神经结构的塑造过程
+### 阶段3：语言社会性对神经表征的影响
+- 引入多个智能体群体，初始有不同的通信系统
+- 观察语言融合、方言形成过程中的神经适应机制
+- 研究社会因素（如互动频率、群体规模）对语言神经表征的塑造
 
 ## 安装指南
 
 ```bash
 # 克隆仓库
-git clone https://github.com/yourusername/NeuroCommModule-CoEvol.git
+git clone https://github.com/yourusername/NeuroCommModuleSculptor.git
 
 # 进入项目目录
-cd NeuroCommModule-CoEvol
+cd NeuroCommModuleSculptor
 
 # 创建虚拟环境
 python -m venv venv
@@ -94,23 +87,29 @@ pip install -r requirements.txt
 
 ```python
 # 基础实验示例
-from neurocommmodule import ExperimentRunner
+from neurocommmodule import MultiAgentExperiment
 
 # 配置实验参数
 config = {
     "base_model": "TinyLlama-1.1B",
-    "module_type": "adapter",
-    "module_position": 8,  # 第8层
-    "signal_type": "vector",
-    "task": "dialogue_completion",
-    "distributed": True,  # 启用多GPU训练
-    "devices": [0, 1]     # 使用两张A100 GPU
+    "num_agents": 4,
+    "adapter_config": {
+        "bottleneck_dim": 128,
+        "activation": "gelu"
+    },
+    "communication_type": "discrete",
+    "vocab_size": 32,
+    "max_message_length": 8,
+    "task": "reference_game",
+    "distributed": True,
+    "devices": [0, 1]
 }
 
 # 运行实验
-runner = ExperimentRunner(config)
-results = runner.train(epochs=10)
-runner.visualize_evolution(results)
+experiment = MultiAgentExperiment(config)
+results = experiment.train(epochs=50)
+experiment.visualize_neural_evolution(results)
+experiment.analyze_language_impact()
 ```
 
 更多示例请查看 [examples](examples/) 目录。
@@ -118,65 +117,49 @@ runner.visualize_evolution(results)
 ## 项目结构
 
 ```
-NeuroCommModule-CoEvol/
-├── src/                      # 源代码
-│   ├── models/               # 模型定义
-│   │   ├── model_wrapper.py  # 模型抽象基类
-│   │   ├── tinyllama_wrapper.py # TinyLlama模型适配器
+NeuroCommModuleSculptor/
+├── src/                        # 源代码
+│   ├── agents/                 # 智能体实现
+│   │   ├── agent_base.py       # 智能体基类
+│   │   ├── llm_agent.py        # LLM智能体实现
 │   │   └── __init__.py
-│   ├── modules/              # 通信模块实现
-│   │   ├── adapter_module.py # Adapter式通信模块
-│   │   ├── vector_module.py  # 向量通信模块
-│   │   ├── symbol_module.py  # 符号通信模块
+│   ├── neural_modules/         # 神经通信模块
+│   │   ├── adapter_module.py   # Adapter模块实现
+│   │   ├── lora_module.py      # LoRA修改层实现
+│   │   ├── vector_module.py    # 向量通信模块
+│   │   └── __init__.py 
+│   ├── communication/          # 通信协议
+│   │   ├── discrete_channel.py # 离散符号通道
+│   │   ├── vector_channel.py   # 连续向量通道
+│   │   ├── message.py          # 消息定义
 │   │   └── __init__.py
-│   ├── protocols/            # 通信协议
-│   ├── experiments/          # 实验设计
-│   │   ├── experiment_runner.py # 实验运行框架
-│   │   ├── dialogue_task.py  # 对话完成任务
+│   ├── environments/           # 交互环境
+│   │   ├── reference_game.py   # 参考游戏环境
+│   │   ├── dialogue_env.py     # 对话环境
+│   │   ├── problem_solving.py  # 问题解决环境
 │   │   └── __init__.py
-│   └── visualization/        # 结果可视化
-│       ├── vector_visualizer.py  # 向量可视化工具
-│       ├── symbol_visualizer.py  # 符号可视化工具
-│       ├── parameter_visualizer.py # 参数变化可视化工具
+│   ├── experiments/            # 实验设计
+│   │   ├── multi_agent_experiment.py  # 多智能体实验
+│   │   ├── metrics.py          # 评估指标
+│   │   └── __init__.py
+│   └── analysis/               # 分析工具
+│       ├── language_analyzer.py  # 语言分析工具
+│       ├── neural_tracker.py     # 神经变化跟踪器
+│       ├── visualizer.py         # 可视化工具
 │       └── __init__.py
-├── configs/                  # 配置文件
-├── examples/                 # 示例代码
-│   └── basic_experiment.py   # 基础实验示例
-├── tests/                    # 测试代码
-├── docs/                     # 文档
-├── requirements.txt          # 项目依赖
-├── setup.py                  # 安装脚本
-└── README.md                 # 项目说明
+├── configs/                    # 配置文件
+├── examples/                   # 示例代码
+│   ├── basic_reference_game.py # 基础参考游戏示例
+│   ├── negotiation_game.py     # 谈判博弈示例
+│   └── neural_adaptation.py    # 神经适应分析示例
+├── tests/                      # 测试代码
+├── docs/                       # 文档
+├── requirements.txt            # 项目依赖
+├── setup.py                    # 安装脚本
+└── README.md                   # 项目说明
 ```
 
-## 如何贡献
-
-> "通过观察通信模块的协同演化，我们验证维特根斯坦关于'语言不是表达思想，而是构成思想'的核心论断。每个训练checkpoint都是对语言如何雕刻神经连接的见证。"
-
-我们欢迎各种形式的贡献！如果您对神经网络通信与协同进化感兴趣，可以：
-
-1. Fork 本仓库
-2. 创建特性分支 (`git checkout -b feature/amazing-feature`)
-3. 提交更改 (`git commit -m '添加了新的通信模块'`)
-4. 推送到分支 (`git push origin feature/amazing-feature`)
-5. 开启 Pull Request
-
-## 参考文献
-
-- [1] [Modular Meta-Learning (NeurIPS 2018)](https://arxiv.org/abs/1806.10166)
-- [2] Wittgenstein, L. (1953). Philosophical Investigations. Blackwell Publishing.
-- [3] Wittgenstein, L. (1921). Tractatus Logico-Philosophicus. Routledge & Kegan Paul.
-- [4] Hutto, D. D. (2003). Wittgenstein and the End of Philosophy: Neither Theory nor Therapy. Palgrave Macmillan.
-- [5] [The Sparsity of Interaction in Neural Networks (ICLR 2023)](https://arxiv.org/abs/2210.14202)
-- [6] [Emergent Communication through Meta-Learning (ICLR 2022)](https://arxiv.org/abs/2110.05208)
-- [7] [Symbol Emergence in Neural Networks (Frontiers in Robotics and AI 2023)](https://www.frontiersin.org/articles/10.3389/frobt.2023.1205524)
-- [8] [Language Processing in Brains and Machines (Nature Neuroscience 2022)](https://www.nature.com/articles/s41593-022-01114-5)
-
-## 许可证
-
-本项目采用 MIT 许可证 - 详见 [LICENSE](LICENSE) 文件。
-
-## 实现详情
+## 实现细节
 
 ### 通信模块类型
 
@@ -205,7 +188,40 @@ NeuroCommModule-CoEvol/
    - 实现梯度累积和混合精度训练，加速协同进化过程
    - 针对通信模块特别优化，保证演化轨迹的一致性
 
-3. **可视化资源分配**
-   - 每个GPU独立处理不同的可视化任务
-   - 自动负载均衡，确保两张A100显卡的平衡利用
+## 如何贡献
+
+> "通过观察语言如何在神经网络中生长，我们不仅能深入理解认知的形成，还能为建造更智能的AI系统提供启发。"
+
+我们欢迎各种形式的贡献！如果您对语言、神经网络与认知塑造感兴趣，可以：
+
+1. Fork 本仓库
+2. 创建特性分支 (`git checkout -b feature/amazing-feature`)
+3. 提交更改 (`git commit -m '添加新的通信模块'`)
+4. 推送到分支 (`git push origin feature/amazing-feature`)
+5. 开启 Pull Request
+
+## 参考文献
+
+- [1] Wittgenstein, L. (1953). Philosophical Investigations. Blackwell Publishing.
+- [2] [Emergent Communication in Multi-Agent Reinforcement Learning (ICLR 2020)]
+- [3] Hupkes, D., et al. (2019). The compositionality of neural networks: integrating symbolism and connectionism. Journal of Artificial Intelligence Research.
+- [4] [Parameter-efficient Transfer Learning for NLP (ACL 2019)](https://arxiv.org/abs/1902.00751)
+- [5] [LoRA: Low-Rank Adaptation of Large Language Models (ICLR 2022)](https://arxiv.org/abs/2106.09685)
+- [6] Kirby, S. (2001). Spontaneous evolution of linguistic structure: an iterated learning model of the emergence of regularity and irregularity. IEEE Transactions on Evolutionary Computation, 5(2), 102-110.
+- [7] [Language as an Evolutionary System (Nature Human Behavior 2019)]
+- [8] Dehaene, S. (2009). Reading in the Brain: The New Science of How We Read. Penguin.
+
+## 许可证
+
+本项目采用 MIT 许可证 - 详见 [LICENSE](LICENSE) 文件。
+
+## 研究应用
+
+本项目的研究成果可应用于多个领域：
+
+1. **语言学习的计算认知模型**：了解语言如何在认知系统中创造结构
+2. **智能系统设计**：利用语言的塑造作用优化神经网络架构
+3. **适应性神经接口**：开发能根据交互动态调整的神经通信模块
+4. **教育应用**：创建模拟语言习得的神经适应过程的教育工具
+5. **语言障碍研究**：模拟语言障碍的神经机制及可能的干预方法
 

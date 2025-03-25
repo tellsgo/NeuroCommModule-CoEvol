@@ -1,80 +1,87 @@
-# NeuroCommModule-CoEvol
+# NeuroCommModuleSculptor
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Python Version](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/downloads/)
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/downloads/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-1.10%2B-orange)](https://pytorch.org/)
 
-> "The boundaries of language are the boundaries of neural networks."  
-> —— Inspired by Wittgenstein's "Tractatus Logico-Philosophicus" 5.6
+> "The limits of language are the limits of neural networks."  
+> —— Inspired by Wittgenstein's Tractatus Logico-Philosophicus 5.6
 
-## Philosophical Declaration: Language as the Sculptor of Neural Architecture
+## Declaration I: Language as the Sculptor of Neural Architecture
 
-When we observe the internal workings of large language models, we are not only studying computer science but also exploring how language shapes the essence of cognition. NeuroCommModule-CoEvol (Neural Communication Module Co-Evolution) is an experiment at the intersection of Wittgenstein's philosophy and neuroscience — by adding learnable communication modules to specific layers of the model, observing their evolution, and providing computational evidence for understanding the relationship between language and thought.
+When we observe the internal workings of large language models, we are not merely studying computer science, but exploring how language shapes the essence of cognition. This project stands at the intersection of linguistic philosophy and neuroscience —— through adding learnable communication modules at specific layers of the model, we observe their evolution process, providing computational evidence for understanding the relationship between language and thought.
 
-> "We seek to answer: What cognitive landscape does language carve when it grows within artificial neural networks? This experiment is essentially a neural modeling version of the language game theory from 'Philosophical Investigations' Section 23."
+## Declaration II: Language and Social Interaction as Prerequisites for Intelligence Emergence
 
-## Language Ontology: From Resource Constraints to Philosophical Breakthrough
+> "We seek to answer: What cognitive landscape will be carved when language grows in artificial neural networks? This experiment is essentially a neural modeling version of Wittgenstein's language games from Philosophical Investigations."
 
-Traditional large model collaborative training is constrained by computational resources, and we turn to "local functional layer evolution observation," similar to Wittgenstein's transition from "Tractatus Logico-Philosophicus" to "Philosophical Investigations" — from formal logic to language games. This transition brings three breakthroughs:
+## Project Overview: Multi-Agent Language Emergence Experiment
 
-- **Embodied Cognitive Realization**: By fine-tuning only a minimal number of parameters (about 0.1%), simulating the dialectical relationship between "the constraint of existing neural structures" and "the creativity of language experience" in language acquisition
-- **Proposition Rewriting Process**: Focusing on single module changes, tracking how language ability "sculpts" neural connections
-- **Biological Philosophy Inspiration**: Simulating the functional differentiation of the brain's language areas, exploring Wittgenstein's statement that "language is not the clothing of thought, but the embodiment of thought"
+NeuroCommModuleSculptor explores how language shapes neural network structures through constructing a multi-agent environment where multiple independent language model instances develop communication protocols and symbol systems while solving collaborative tasks. Through observing this process, we can gain deeper insights into how language sculpts neural structures.
 
-## Technical and Philosophical Mapping
+> "How do different AI agents develop effective communication methods without predefined protocols? How does this language emergence process reshape their neural representations?"
 
-| Technical Component | Wittgensteinian Philosophical Mapping | Neuroscientific Metaphor |
-|-------------------|-------------------------------------|-------------------------|
-| Communication Module | Basic Rules of Language Games | Broca-Wernicke Connection |
-| Inter-module Protocol | Picture Theory of Propositions | Corpus Callosum Information Transfer |
-| Functional Emergence | Impossibility of Private Language | Cortical Functional Reorganization |
+## Core Design: Multi-Agent Co-evolution
+
+Unlike traditional designs that implement communication modules within a single model, this project employs multiple completely independent LLM instances as agents that:
+
+- **Make Independent Decisions**: Each LLM instance maintains its own parameters and state
+- **Have Limited Communication**: Agents can only communicate through restricted communication channels
+- **Work on Collaborative Tasks**: Only through effective collaboration can they achieve higher rewards
+- **Develop Emergent Language**: Observe how communication protocols form and evolve from scratch through training
+
+This design allows us to observe how language symbols are created, agreed upon, and optimized from nothing, simulating the formation process of early human language.
 
 ## Technical Implementation Path
 
-### 1. Communication Module Design: Physical Implementation of Language Games
-- Insert lightweight modules in the middle layers of Transformer (layers 6-12), analogous to the distribution of language areas in the cortex
-- Support multiple structures: Adapter-style, symbol generator, vector communicator, corresponding to different "language game" forms described by Wittgenstein
+### 1. Multi-Agent Architecture
+- Deploy multiple independent LLM instances (such as TinyLlama-1.1B or Phi-3-mini) as agents
+- Each agent has its own independent parameter set but shares the same initial weights
+- Support flexible configuration of 2-8 agents to study language emergence characteristics in groups of different sizes
 
-### 2. Communication Protocol: How Propositions Shape Reality
-> "The world is the totality of facts, language is the logical picture of facts" —— Wittgenstein's "Tractatus Logico-Philosophicus" 1.1
+### 2. Restricted Communication Protocol
+- Agents can only send token sequences or vectors of limited length
+- Optional communication bandwidth limitations, from highly restricted (only a few discrete symbols) to relatively open (short sentences)
+- Support both turn-based and real-time communication modes, simulating language development in different social environments
 
-- Support multiple signal types: discrete symbols, continuous vectors, probability distributions
-- Implement turn-based and streaming interaction methods, simulating language communication in different contexts
-- Include external rewards and internal consistency feedback mechanisms, exploring the relationship between language and meaning
+### 3. Collaborative Task Design
+- **Information Asymmetry Tasks**: Each agent only possesses partial information and needs to communicate to integrate it for problem-solving
+- **Sequence Generation Tasks**: Agents take turns contributing content to generate coherent text
+- **Collaborative Problem Solving**: Requires multiple specialized agents to collaborate to solve complex problems
+- **Resource Allocation Games**: Simulates negotiation and trading in economic activities, requiring efficient communication
 
-### 3. Observation Indicators: Archaeology of Thought
-- Module parameter changes: weight distribution, singular value changes, as numerical evidence of "language sculpting thought"
-- Communication content analysis: symbol/vector clustering and visualization, each training checkpoint is a numerical interpretation of "Tractatus Logico-Philosophicus" proposition 4.002
-- Behavioral emergence: collaborative task performance improvement metrics, validating Wittgenstein's core thesis that "language does not express thought, but constitutes thought"
+### 4. Language Evolution Analysis
+- Communication content recording and clustering analysis, tracking the emergence of new vocabulary and grammatical structures
+- Communication efficiency measurement, observing how communication protocols become more concise and precise over time
+- Cross-task transfer testing, examining the generalization ability and robustness of emergent language
 
-## Experimental Design: Structured Implementation of Language Games
+## Experimental Design: From Simple to Complex Language Emergence
 
-### Phase 1: Minimal Validation Experiment
-- Simple collaborative tasks (dialogue generation, cooperative problem-solving)
-- Use small models (TinyLlama-1.1B or Phi-3-mini)
-- Control group design to validate the effectiveness of communication modules
+### Phase 1: Basic Symbol Negotiation
+- Start with minimal communication (only allowing a few discrete symbols)
+- Use reference games (one agent describes an object, another guesses)
+- Observe the formation process of a basic vocabulary
 
-### Phase 2: Communication Evolution Analysis
-> "Language does not express thought, but constitutes thought" —— Wittgenstein's "Philosophical Investigations"
+### Phase 2: Grammatical Structure Emergence
+- Increase communication bandwidth and task complexity
+- Require multiple rounds of interaction to complete tasks
+- Analyze the spontaneous formation of syntactic structures and contextual dependencies
 
-- Communication signal visualization and clustering analysis, observing the self-organization process of language symbol systems
-- Intervention experiments to test system robustness, exploring the boundary conditions of language rules
-- Cross-task transfer evaluation of generalization ability, studying family resemblance between language games
-
-### Phase 3: Theoretical Extension
-- Multi-module collaborative experiments, simulating interaction between language areas and other cognitive functional areas
-- Evolutionary dynamics mathematical modeling, formalizing the process of language sculpting neural structures
+### Phase 3: Sociolinguistic Simulation
+- Introduce multiple agent groups, initially with different communication systems
+- Observe language fusion, dialect formation, and the emergence of lingua franca
+- Study the impact of social factors (such as interaction frequency, group size) on language evolution
 
 ## Installation Guide
 
 ```bash
-# Clone the repository
-git clone https://github.com/yourusername/NeuroCommModule-CoEvol.git
+# Clone repository
+git clone https://github.com/yourusername/NeuroCommModuleSculptor.git
 
-# Enter the project directory
-cd NeuroCommModule-CoEvol
+# Enter project directory
+cd NeuroCommModuleSculptor
 
-# Create a virtual environment
+# Create virtual environment
 python -m venv venv
 source venv/bin/activate  # Linux/Mac
 # or venv\Scripts\activate  # Windows
@@ -87,23 +94,24 @@ pip install -r requirements.txt
 
 ```python
 # Basic experiment example
-from neurocommmodule import ExperimentRunner
+from neurocommmodule import MultiAgentExperiment
 
 # Configure experiment parameters
 config = {
     "base_model": "TinyLlama-1.1B",
-    "module_type": "adapter",
-    "module_position": 8,  # Layer 8
-    "signal_type": "vector",
-    "task": "dialogue_completion",
-    "distributed": True,  # Enable multi-GPU training
-    "devices": [0, 1]     # Use two A100 GPUs
+    "num_agents": 4,
+    "communication_type": "discrete",
+    "vocab_size": 32,
+    "max_message_length": 8,
+    "task": "reference_game",
+    "distributed": True,
+    "devices": [0, 1]
 }
 
 # Run the experiment
-runner = ExperimentRunner(config)
-results = runner.train(epochs=10)
-runner.visualize_evolution(results)
+experiment = MultiAgentExperiment(config)
+results = experiment.train(epochs=50)
+experiment.visualize_language_evolution(results)
 ```
 
 More examples can be found in the [examples](examples/) directory.
@@ -111,30 +119,36 @@ More examples can be found in the [examples](examples/) directory.
 ## Project Structure
 
 ```
-NeuroCommModule-CoEvol/
-├── src/                      # Source code
-│   ├── models/               # Model definitions
-│   │   ├── model_wrapper.py  # Model abstract base class
-│   │   ├── tinyllama_wrapper.py # TinyLlama model adapter
+NeuroCommModuleSculptor/
+├── src/                        # Source code
+│   ├── agents/               # Agent implementations
+│   │   ├── agent_base.py     # Agent base class
+│   │   ├── llm_agent.py      # LLM agent implementation
 │   │   └── __init__.py
-│   ├── modules/              # Communication module implementations
-│   │   ├── adapter_module.py # Adapter-style communication module
-│   │   ├── vector_module.py  # Vector communication module
-│   │   ├── symbol_module.py  # Symbol communication module
+│   ├── communication/        # Communication protocols
+│   │   ├── discrete_channel.py  # Discrete symbol channel
+│   │   ├── vector_channel.py    # Continuous vector channel
+│   │   ├── message.py           # Message definitions
 │   │   └── __init__.py
-│   ├── protocols/            # Communication protocols
+│   ├── environments/         # Interaction environments
+│   │   ├── reference_game.py # Reference game environment
+│   │   ├── dialogue_env.py   # Dialogue environment
+│   │   ├── problem_solving.py# Problem-solving environment
+│   │   └── __init__.py
 │   ├── experiments/          # Experimental design
-│   │   ├── experiment_runner.py # Experiment running framework
-│   │   ├── dialogue_task.py  # Dialogue completion task
+│   │   ├── multi_agent_experiment.py # Multi-agent experiment
+│   │   ├── metrics.py        # Evaluation metrics
 │   │   └── __init__.py
-│   └── visualization/        # Result visualization
-│       ├── vector_visualizer.py  # Vector visualization tool
-│       ├── symbol_visualizer.py  # Symbol visualization tool
-│       ├── parameter_visualizer.py # Parameter change visualization tool
+│   └── analysis/             # Analysis tools
+│       ├── language_analyzer.py # Language analysis tool
+│       ├── evolution_tracker.py # Evolution tracker
+│       ├── visualizer.py     # Visualization tool
 │       └── __init__.py
 ├── configs/                  # Configuration files
 ├── examples/                 # Example code
-│   └── basic_experiment.py   # Basic experiment example
+│   ├── basic_reference_game.py # Basic reference game example
+│   ├── negotiation_game.py   # Negotiation game example
+│   └── dialect_formation.py  # Dialect formation example
 ├── tests/                    # Test code
 ├── docs/                     # Documentation
 ├── requirements.txt          # Project dependencies
@@ -144,60 +158,37 @@ NeuroCommModule-CoEvol/
 
 ## How to Contribute
 
-> "Through observing the co-evolution of communication modules, we validate Wittgenstein's core thesis that 'language does not express thought, but constitutes thought.' Each training checkpoint is a witness to how language sculpts neural connections."
+> "By observing how independent agents spontaneously form communication systems, we can not only gain deeper understanding of language origins and evolution but also provide insights for the design of future multi-AI systems."
 
-We welcome various forms of contributions! If you are interested in neural network communication and co-evolution, you can:
+We welcome various forms of contributions! If you are interested in multi-agent communication and language emergence, you can:
 
 1. Fork this repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add a new communication module'`)
+3. Commit your changes (`git commit -m 'Add a new environment'`)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
 ## References
 
-- [1] [Modular Meta-Learning (NeurIPS 2018)](https://arxiv.org/abs/1806.10166)
+- [1] [Emergent Communication in Multi-Agent Reinforcement Learning (ICLR 2020)](https://arxiv.org/abs/1910.04979)
 - [2] Wittgenstein, L. (1953). Philosophical Investigations. Blackwell Publishing.
-- [3] Wittgenstein, L. (1921). Tractatus Logico-Philosophicus. Routledge & Kegan Paul.
-- [4] Hutto, D. D. (2003). Wittgenstein and the End of Philosophy: Neither Theory nor Therapy. Palgrave Macmillan.
-- [5] [The Sparsity of Interaction in Neural Networks (ICLR 2023)](https://arxiv.org/abs/2210.14202)
-- [6] [Emergent Communication through Meta-Learning (ICLR 2022)](https://arxiv.org/abs/2110.05208)
-- [7] [Symbol Emergence in Neural Networks (Frontiers in Robotics and AI 2023)](https://www.frontiersin.org/articles/10.3389/frobt.2023.1205524)
-- [8] [Language Processing in Brains and Machines (Nature Neuroscience 2022)](https://www.nature.com/articles/s41593-022-01114-5)
+- [3] Steels, L. (2003). Evolving grounded communication for robots. Trends in cognitive sciences, 7(7), 308-312.
+- [4] [The Emergence of Compositional Languages for Neural Agents (NeurIPS 2021)](https://arxiv.org/abs/2106.02671)
+- [5] [EMMA: Multi-Agent Reinforcement Learning with Emergent Communication (ICML 2022)](https://arxiv.org/abs/2206.07956)
+- [6] Kirby, S. (2001). Spontaneous evolution of linguistic structure: an iterated learning model of the emergence of regularity and irregularity. IEEE Transactions on Evolutionary Computation, 5(2), 102-110.
+- [7] [Learning to Communicate with Deep Multi-Agent Reinforcement Learning (NIPS 2016)](https://arxiv.org/abs/1605.06676)
+- [8] [Language as an Evolutionary System (Nature Human Behavior 2019)](https://www.nature.com/articles/s41562-019-0597-3)
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Implementation Details
+## Research Applications
 
-### Communication Module Types
+The research outcomes of this project can be applied to multiple fields:
 
-1. **Adapter Module** (`adapter_module.py`)
-   - Lightweight bottleneck structure, metaphor for Broca's area neural plasticity
-   - Low resource consumption, suitable for large-scale model fine-tuning
-
-2. **Vector Communication Module** (`vector_module.py`)
-   - Compress hidden states into low-dimensional communication vectors, analogous to symbolic representation of thought
-   - Support optional noise addition and vector quantization, simulating rule variation in Wittgenstein's "language games"
-
-3. **Symbol Communication Module** (`symbol_module.py`)
-   - Generate discrete symbol sequences, corresponding to specific expressions in Wittgenstein's "language games"
-   - Use Gumbel-Softmax technique to achieve differentiable discrete communication
-   - Track symbol usage frequency to analyze language emergence, validating the "impossibility of private language" thesis
-
-### Distributed Training Support
-
-The project is optimized for multi-GPU environments, especially dual A100 GPU setups:
-
-1. **Data Parallel Training**
-   - Use PyTorch DistributedDataParallel for efficient model parallelism
-   - Automatic batch size adjustment, fully utilizing A100's large memory
-
-2. **Gradient Synchronization Optimization**
-   - Implement gradient accumulation and mixed precision training, accelerating the co-evolution process
-   - Special optimization for communication modules, ensuring consistency of evolution trajectories
-
-3. **Visualization Resource Allocation**
-   - Each GPU independently processes different visualization tasks
-   - Automatic load balancing, ensuring balanced utilization of two A100 GPUs 
+1. **Linguistic Theory Validation**: Validate theories of language origins and evolution through computational models
+2. **Multi-AI System Design**: Develop efficient communication protocols for groups of AI systems that need to collaborate
+3. **Human-Machine Interaction Optimization**: Understand how symbol systems form and optimize in interaction
+4. **Educational Applications**: Create educational tools that simulate language acquisition and cultural transmission
+5. **Sociolinguistic Research**: Simulate processes of language variation, propagation, and standardization 
